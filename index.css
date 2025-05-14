@@ -1,0 +1,152 @@
+body { 
+    font-family: 'Arial', sans-serif;
+    overflow: visible;
+    background: linear-gradient(135deg, #6d98f5, #fad0c4); 
+    margin: 0; 
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 90vh; 
+    color: #333; 
+} 
+
+ h1 {
+    font-size: 1.9rem; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+button { 
+    background-color: #ff6f61; 
+    border: none; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 1.2rem; 
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: transform 0.2s; 
+    margin-top: 20px; 
+}
+
+button:hover { 
+    transform: scale(1.05); 
+} 
+.result { 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    margin-top: 30px; 
+    text-align: center; display: none; 
+    animation: pop 0.5s ease; } 
+.vibe-text { 
+    font-size: 1.8rem; 
+    margin-bottom: 10px; 
+}
+
+
+.emoji { 
+    font-size: 3rem;
+ } 
+ @keyframes
+  pop { 0% {transform: scale(0); 
+  opacity: 0; } 
+  100% { 
+  transform: scale(1); 
+  opacity: 1; } } 
+
+#name{
+    color: #ebebf1;
+    font-size: 10px;
+    font-weight: bold;
+    width: 50%;
+    background-color: #8983c0;
+    border-radius: 6px;
+    padding: 8px;
+  
+    
+}
+#name:hover{
+    background-color: #cbd8e1;
+    color: #090a0a;}
+img{
+  
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    justify-items: left;
+    margin-top: 20px;
+   
+}
+
+
+P{
+    font-size: 15PX;
+    margin: 0%;
+   
+}
+
+#p1{
+    margin-top: 50px;
+
+}
+#p2{
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 630px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        text-align: center;
+    }
+    button {
+        width: 70%;
+        padding: 10px;
+        font-size: 1rem;
+     
+    }
+    .result {
+        width: 100%;
+     
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .vibe-text {
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 1.0rem;
+   
+    }
+    
+}
+img:hover {
+    transform: scale(1.05);
+}
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+    body {
+        display:block;
+        max-width: 200vw;
+        overflow-x: hidden;
+    }
+
+    .form {
+        max-width: 90%;
+        padding: 5px;
+        box-shadow: none;
+    }
+}
